@@ -5,12 +5,10 @@ const client = new Client();
 
 client.on('ready', () => {
   client.user.setActivity('Internet Condom Factory ', { type: 'PLAYING' })
-})
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+   console.log(`Logged in as ${client.user.tag}!`);
   const Guilds = client.guilds.cache.map(guild => guild.id);
   console.log(Guilds);
-});
+})
 
 let blacklisted = [
   'https://gif-discorde.com/', 
